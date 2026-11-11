@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Mark Lloyd Arroyo — Graphic Designer Portfolio</title>
+<meta name="description" content="Portfolio of Mark Lloyd Arroyo, digital designer, poster maker and graphic designer from Dasmariñas, Cavite, Philippines.">
+<meta property="og:title" content="Mark Lloyd Arroyo — Graphic Designer">
+<meta property="og:description" content="Simple, beautiful and intuitive designs for social media posts, posters and logos.">
+<meta property="og:image" content="https://marksueportfolio.wordpress.com/wp-content/uploads/2024/07/5r-3.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎨%3C/text%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<script>try{var t=localStorage.getItem("theme")||(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark");document.documentElement.dataset.theme=t}catch(e){document.documentElement.dataset.theme="dark"}</script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip" href="#work">Skip to work</a>
+<header class="bar">
+  <a class="brand" href="#top">Mark Lloyd <span>Arroyo</span></a>
+  <nav aria-label="Social links">
+    <a href="https://www.instagram.com/marksuuee/" target="_blank" rel="noopener">Instagram</a>
+    <a href="https://www.facebook.com/marklloydarroyo" target="_blank" rel="noopener">Facebook</a>
+    <button id="theme" aria-label="Toggle light and dark theme"></button>
+  </nav>
+</header>
+<main id="top">
+  <section class="hero">
+    <p class="eyebrow">Digital · Poster · Graphic Designer</p>
+    <h1>Simple, beautiful designs that <em>say it clearly.</em></h1>
+    <p class="sub">Social media posts, posters and logos made with a personal touch. Based in Dasmariñas, Cavite, Philippines.</p>
+    <div class="cta">
+      <a class="btn" href="#work">View my work</a>
+      <a class="btn ghost" href="mailto:mlloyd.arroyo@gmail.com">Get in touch</a>
+    </div>
+  </section>
+  <section id="work" aria-label="Portfolio gallery">
+    <div class="toolbar">
+      <div class="chips" id="chips" role="group" aria-label="Filter works"></div>
+      <p id="count" aria-live="polite"></p>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+</main>
+<footer>© <span id="year"></span> Mark Lloyd Arroyo · All designs are my own.</footer>
+
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Image viewer" hidden>
+  <div class="lb-top"><div><strong id="cap"></strong><span id="cnt"></span></div><div><a id="orig" target="_blank" rel="noopener">Open original ↗</a><button id="x" aria-label="Close">✕</button></div></div>
+  <div class="stage" id="stage"><img id="img" alt="" draggable="false"></div>
+  <button class="nav prev" id="prev" aria-label="Previous">‹</button>
+  <button class="nav next" id="next" aria-label="Next">›</button>
+  <div class="tools"><button id="zo" aria-label="Zoom out">−</button><span id="zl">100%</span><button id="zi" aria-label="Zoom in">+</button><button id="zr" aria-label="Reset zoom">Fit</button></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
